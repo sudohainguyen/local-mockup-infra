@@ -1,0 +1,6 @@
+global:
+  postgres:
+    auth:
+      database: mlops
+      username: mypostgres
+      password: mypostgres

@@ -1,0 +1,15 @@
+repositories:
+  - name: community-charts
+    url: https://community-charts.github.io/helm-charts
+  - name: bitnami
+    url: https://charts.bitnami.com/bitnami
+  - name: bigdata-gradiant
+    url: https://gradiant.github.io/bigdata-charts
+
+releases:
+  - name: postgresql
+    namespace: db
+    createNamespace: true
+    chart: bitnami/postgresql
+    values:
+      - postgresql/values.yaml
